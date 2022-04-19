@@ -10,8 +10,8 @@ Documentação
   
   1. Listagem dos Pokémons
     Exemplos de utilização para a listagem dos pokemons, podendo utilizar ou não a variavel limit para limitar a exibição.
-    GET .../pokemon
-    GET .../pokemon&limit=151
+    GET .../pokemon/
+    GET .../pokemon/&limit=151
     
  2. Detalhes do Pokemon
     Exemplos utilização para a listagem detalhada do pokemon, podendo utilizar o id ou nome do pokemon.
