@@ -3,14 +3,14 @@ import json
 
 app = Flask(__name__)
 
-@app.route('/pokemon')
+@app.route('/pokemon/')
 def lista_todos_pokemons():
     with open("pokedex.json") as lista_pokemons:
         database = json.load(lista_pokemons)
 
     return jsonify(database)
 
-@app.route('/pokemon&limit=<int:limit>')
+@app.route('/pokemon/&limit=<int:limit>')
 def lista_pokemons(limit):
     with open("pokedex.json") as lista_pokemons:
         database = json.load(lista_pokemons)
